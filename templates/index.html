@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Account Retention Modelling</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style=" z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large =" width:100%;font-size:22px">Close
+      Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>Account Retention<br>Modelling</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#intro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a>
+      <a href="#dataCollec" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Data Collection</a>
+      <a href="#dataAnalysis" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Data Analysis</a>
+      <a href="#model" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine Learning Model</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Account Retention Modelling</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style=" cursor:pointer" title="Close Menu" id="myOverlay">
+  </div>
+
+   <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Introduction -->
+  <div class="c1">
+    <div class="w3-container" id="intro">
+      <h1 class="w3-xxxlarge w3-text-black"><b>Introduction</b></h1>
+      <hr style="width:50px;border:5px solid black" class="w3-round">
+          <p>
+            Retaining old customers along with making new ones is an important aspect in any industry and many efforts
+            are
+            made by the companies to do so. When a customer leaves a particular company and shifts to from one service
+            provider to its competitor in the market, it is called Customer Churn. Although there are many reasons for
+            customer churn, some of the major reasons are service dissatisfaction, lower interest rates, and better
+            alternatives.
+          <p>
+
+            A customer retention model is a way of predicting whether a customer will stay with your
+            business. It helps you identify which customers are most or least likely to buy your product or use your
+            service again. By running customer retention models, companies can focus on marketing efforts on the people
+            who are most likely to respond and send personalized offers to different segments based on predicted
+            behaviour.
+          </p>
+          </p>
+    </div>
+    <div class="image">
+      <img src="{{ url_for('static', filename='attrition.JPG') }}" alt="My Image">
+    </div>
+
+  </div>
+  <!-- Data Collection -->
+  <div class="w3-container" id="dataCollec" style=" margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Data Collection</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+        <p>
+          Data collection is a crucial step in any machine learning project. It involves gathering the necessary data
+          that
+          will be used to train and evaluate the machine learning models. The quality and relevance of the collected
+          data
+          directly impact the performance and accuracy of the models. The process of data collection may vary depending
+          on
+          the nature of the project and the specific requirements. Thorough data cleaning and preprocessing are
+          typically
+          performed after collection to ensure the data is in a suitable format for analysis and model training. The
+          success of the ML project heavily relies on the availability of high-quality and representative data, making
+          data collection a crucial aspect of the overall workflow.
+        </p>
+
+        <p>Dataset used : Churn for Bank Customers </p>
+        <p>• Shape: 10000 Rows, 14 Columns</p>
+        <p>• Data Source: Kaggle</p>
+
+  </div>
+
+  <!-- Images for data collecion and cleaning -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <img src="{{ url_for('static', filename='datacollec.JPG') }}" alt="My Image">
+      <div class="w3-container">
+        <center>
+          <h4>Data Collection</h4>
+        </center>
+      </div>
+    </div>
+
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-container"></div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom" style="
+     height:197px">
+     
+     <img src="{{ url_for('static', filename='dataclean.JPG') }}" alt="My Image">
+      <div class="w3-container">
+        <center>
+          <h4>Data Cleaning</h4>
+        </center>
+      </div>
+    </div>
+
+    <!-- Data Analysis -->
+    
+    <div class="w3-container" id="dataAnalysis" style=" margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-black"><b>Data Analysis</b></h1>
+      <hr style="width:50px;border:5px solid black" class="w3-round">
+          <p>
+            Data Analysis is a vital step in machine learning projects. It involves examining and understanding the
+            collected data to find valuable patterns and insights. By using statistical techniques and visualization
+            tools, we can figure out important trends and relationships in the data. This analysis helps in making
+            better decisions, developing predictive models, and making business strategies. With data analysis,
+            organizations can optimize processes, identify opportunities, and tackle challenges. It plays a crucial role
+            in harnessing data to gain a competitive edge in the field of machine learning.
+          </p>
+          <br>
+          <p>
+            Here's the link to the report :                   
+            <a id="rlink" href="https://lookerstudio.google.com/s/lrRmgt0jM1Y"> Click Me to View :)</a> 
+          </p>
+          
+          
+    </div>
+
+    <!-- Ml Model -->
+    <div class="w3-container" id="model"  style=" margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-black"><b>About The Model</b></h1>
+      <hr style="width:50px;border:5px solid black" class="w3-round">
+          <p>
+            Machine learning models are computational algorithms that enable computers to learn from data and make
+            predictions or take actions without being explicitly programmed. These models are designed to automatically
+            identify patterns, relationships, and insights within large and complex datasets. Machine learning models
+            are employed in a wide range of applications, including image and speech recognition, natural language
+            processing, recommendation systems, fraud detection, and medical diagnosis.
+          </p>
+          <p>
+            The Random Forest model is a powerful machine learning algorithm widely used for both classification and
+            regression tasks. It belongs to the ensemble learning family, combining the predictions of multiple decision
+            trees to make more accurate predictions. In Random Forest, a collection of decision trees is built, where
+            each tree is trained on a random subset of the training data and a random subset of features. The final
+            prediction is then determined by aggregating the predictions of all the individual trees. This ensemble
+            approach helps to reduce overfitting and improve generalization. Random Forest is known for its ability to
+            handle large and complex datasets, handle both numerical and categorical features.
+          </p>
+    </div>
+
+    <div class="w3-container" style=" margin-top:55px">
+      <form action="{{ url_for('predict')}}" method="post">
+  
+      <p>Fill out the fields to Predict :) </p>
+      <div class="contentform">
+        <div class="leftcontact ">
+          <div class="form-group">
+            <p>Credit Score<span>*</span></p>
+            <span class="icon-case"></span>
+            <input name="CreditScore" name="CreditScore" type="number">
+          </div>
+
+          <div class="form-group">
+            <p>Age <span>*</span></p>
+            <span class="icon-case"></span>
+            <input name="Age" required="required">
+          </div>
+
+          <div class="form-group">
+            <p>Tenure <span>*</span></p>
+            <span class="icon-case"></span>
+            <input name="Tenure" required="required">
+          </div>
+
+          <div class="form-group">
+            <p>Enter the Account Balance: <span>*</span></p>
+            <span class="icon-case"></span>
+            <input name="Balance" required="required">
+          </div>
+
+          <div class="form-group">
+            <p>Number of Products <span>*</span></p>
+            <span class="icon-case"></span>
+            <input name="NumOfProducts" required="required">
+          </div>
+
+          <div class="form-group">
+            <p>Do the Customer have Credit Card? (1=Yes, 0=No) <span>*</span></p>
+            <span class="icon-case"></span>
+            <input name="HasCrCard" required="required">
+          </div>
+        </div>
+
+        <div class="rightcontact">
+          <div class="form-group">
+            <p>Is the Customer Active Member (1=Yes, 0=No)<span>*</span></p>
+            <span class="icon-case"></span>
+            <input name="IsActiveMember" required="required">
+          </div>
+
+          <div class="form-group">
+            <p>Enter the Estimated Salary: <span>*</span></p>
+            <span class="icon-case"></span>
+            <input name="EstimatedSalary" required="required">
+          </div>
+
+          <div class="form-group">
+            <p>Enter The Location: <span>*</span></p>
+            <span class="icon-case"></span>
+            <select name="Geography_Germany" required="required">
+              <option value="Germany">Germany</option>
+              <option value="Spain">Spain</option>
+              <option value="France">France</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>Gender of Customer: <span>*</span></p>
+            <span class="icon-case"></span>
+            <select name="Gender_Male" id="resea" required="required">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <button type="submit" class="w3-button w3-block w3-padding-large w3-black w3-margin-bottom" style=" font-weight: 800; font-size:large;">Predict
+      whether Customer will Leave or Not</button>
+    </form>
+    <center>
+      <br><br><h3 class="alert alert-primary text-center" role="alert">{{ Prediction_res }}<h3>
+    </center>
+
+  </div>
+
+  </div>
+
+  <div class="w3-light-grey w3-container w3-padding-32" style=" margin-top:75px;padding-right:58px">
+    <p class="w3-right">@ML Project-2023 </p>
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getEl.display = "block";
+      document.getEl.display = "block";
+    }
+
+    function w3_close() {
+      document.getEl.display = "none";
+      document.getEl.display = "none";
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif
+}
+#rlink{
+  color:blue;
+  margin-left: 15px;
+
+}
+p span {
+color: #F00;
+}
+body {
+  font-size: 16px;
+}
+
+img {
+  height: 75%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.c1 {
+  display: flex;
+  align-items: inherit;
+}
+
+#intro {
+  margin-top: 40px;
+  width: 70%
+}
+
+.image {
+  margin-top: 182px;
+  width: 40%;
+  margin-left: 15px;
+}
+.icon-case {
+  width: 35px;
+  float: left;
+  border-radius: 5px 0px 0px 5px;
+  background: #d2cbcb;
+  height: 31px;
+  position: relative;
+  text-align: center;
+  line-height: 40px;
+}
+
+.contentform {
+  padding: 40px 30px;
+}
+
+.leftcontact {
+  width: 50.5%;
+  float: left;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+  padding: 0px 15px 0px 0px;
+}
+
+.rightcontact {
+  width: 49.%;
+  float: right;
+  box-sizing: border-box;
+  padding: 0px 0px 0px 15px;
+}
